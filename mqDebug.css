@@ -1,0 +1,80 @@
+/*!
+* Special Debug classes by George Fox
+* gfox@apus.edu
+* 9/29/2011
+*/
+
+.showMe {
+	background-color: rgba(255,184,56,0.36);
+}
+
+body:before {
+	z-index: 10;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	padding: 5px;
+	color: #fff;
+}
+
+/* #Media Queries
+================================================== */
+
+/* large desktop screen 960 (devices and browsers) */
+@media only screen and (min-width: 959px) {
+	
+	body:before {
+		content: "Min: 959px";
+		background: none rgba(20, 13, 117, 0.64);
+	}
+
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	
+	body:before {
+		content: "Max: 959px";
+		background: rgba(10,77,114,0.64) none;
+	}	
+	
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	body:before {
+		content: "768px-959px";
+		background: rgba(26,116,65,0.64) none;
+	}	
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	
+	body:before {
+		content: "Max: 767px";
+		background: rgba(98,124,33,0.64) none;
+	}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	body:before {
+		content: "480px-767px";
+		background: rgba(105,76,8,0.64) none;
+	}
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	
+	body:before {
+		content: "Max: 479px";
+		background: rgba(112,26,8,0.64) none;
+	}
+
+}
